@@ -170,7 +170,8 @@ class Entity(models.Model):
     is_invisible = models.BooleanField(default = False)
     location = models.ForeignKey(u'self', blank = True, null = True,
       related_name = u'occupant')
-    name = models.TextField(blank = True, default = u'(Insert name here)')
+    name = models.TextField(blank = True, default =
+      directory.settings.PLACEHOLDER_NAME)
     observes_daylight_saving_time = models.BooleanField(blank = True, default
       = True)
     other_contact = models.TextField(blank = True)

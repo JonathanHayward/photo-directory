@@ -143,7 +143,7 @@ def ajax_search(request):
         tokens.remove(u'')
     candidates = []
     for candidate in directory.models.Entity.objects.filter(is_invisible =
-      False):
+      False).exclude(name = directory.settings.PLACEHOLDER_NAME):
         candidates.append([candidate, 0])
     for token in tokens:
         new_candidates = []
@@ -235,7 +235,7 @@ def changelog(request):
       })
       
 def create_user(request):
-    if settings.SHOULD_ALLOW_USERS_TO_CREATE_ACCOUNTS:
+    if directory.settings.SHOULD_ALLOW_USERS_TO_CREATE_ACCOUNTS:
         username = request.REQUEST[u'new_username']
         email = request.REQUEST[u'new_email']
         password = request.REQUEST[u'new_password']

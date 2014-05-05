@@ -1,0 +1,862 @@
+Thu Jul 15 13:54:28 2010: Entity.name(1) changed by: jonathan to: Test name...Thu Jul 15 13:54:54 2010: Entity.name(1) changed by: jonathan to: Test name...Thu Jul 15 13:55:02 2010: Entity.name(1) changed by: jonathan to: Test name..Thu Jul 15 13:55:31 2010: Entity.honorifics(1) changed by: jonathan to: Test honorifics...Thu Jul 15 14:00:07 2010: Entity.homepage(1) changed by: jonathan to: http://google.com/Thu Jul 15 15:34:52 2010: Entity.name(1) changed by: jonathan to: Test name...
+Fri Jul 23 15:21:30 2010: EntityEmail for Entity 1) added by: jonathan, value: test
+
+Fri Jul 23 15:22:14 2010: EntityEmail for Entity 1) added by: jonathan, value: test@test.com
+
+Tue Aug  3 10:12:09 2010: Entity.element_location_1(1) changed by: jonathan to: location.-1
+
+Tue Aug  3 10:12:31 2010: Entity.element_location_1(1) changed by: jonathan to: location.-1
+
+Tue Aug  3 10:12:37 2010: Entity.element_department_1(1) changed by: jonathan to: department.-1
+
+Tue Aug  3 10:13:03 2010: Entity.element_department_1(1) changed by: jonathan to: department.-1
+
+Tue Aug  3 10:13:07 2010: Entity.element_department_1(1) changed by: jonathan to: department.1
+
+Mon Aug 23 15:42:21 2010: EntityEmail for Entity 1) added by: jonathan, value: email@example.com
+
+Tue Aug 24 11:33:03 2010: entity.homepage(1) changed by: jonathan to: http://google.com/
+
+Tue Aug 24 12:17:29 2010: EntityEmail for Entity 1) added by: jonathan, value: email2@example.com
+
+Tue Aug 24 12:46:32 2010: Entity.name(1) changed by: jonathan to: Test Name
+
+Wed Aug 25 15:40:23 2010: Entity.name(8) changed by: jonathan to: Test 1
+
+Wed Aug 25 16:30:58 2010: Entity.name(1) changed by: jonathan to: foo
+
+Thu Aug 26 15:27:44 2010: Entity.name(10) changed by: jonathan to: Foo
+
+Thu Aug 26 16:10:49 2010: Entity.name(12) changed by: jonathan to: bar
+
+Thu Aug 26 16:18:11 2010: Entity.name(1) changed by: jonathan to: baz
+
+Thu Aug 26 16:21:59 2010: Entity.name(3) changed by: jonathan to: Jonathan
+
+Fri Aug 27 09:32:58 2010: Image for entity 5 changed by jonathan".
+Fri Aug 27 09:33:26 2010: Image for entity 6 changed by jonathan".
+Fri Aug 27 09:35:32 2010: Image for entity 7 changed by jonathan".
+Fri Aug 27 09:37:34 2010: Image for entity 8 changed by jonathan".
+Fri Aug 27 09:38:59 2010: Image for entity 9 changed by jonathan".
+Fri Aug 27 09:42:19 2010: Image for entity 10 changed by jonathan".
+Fri Aug 27 09:43:03 2010: Image for entity 11 changed by jonathan".
+Fri Aug 27 09:48:49 2010: Image for entity 13 changed by jonathan".
+Fri Aug 27 09:49:38 2010: Image for entity 14 changed by jonathan".
+Fri Aug 27 09:57:40 2010: Image for entity 15 changed by jonathan".
+Fri Aug 27 10:05:05 2010: EntityEmail for Entity 16) added by: jonathan, value: a@google.com
+
+Fri Aug 27 10:05:31 2010: Entity.name(16) changed by: jonathan to: Hello
+
+Fri Aug 27 11:42:32 2010: EntityEmail for Entity 16) added by: jonathan, value: a@google.com
+
+Fri Aug 27 11:44:16 2010: EntityEmail for Entity 16) added by: jonathan, value: b@google.com
+
+Fri Aug 27 11:47:45 2010: EntityEmail for Entity 16) added by: jonathan, value: c@google.com
+
+Fri Aug 27 11:49:37 2010: EntityEmail for Entity 16) added by: jonathan, value: d@google.com
+
+Fri Aug 27 11:51:23 2010: EntityEmail for Entity 16) added by: jonathan, value: e@google.com
+
+Fri Aug 27 11:52:53 2010: EntityEmail for Entity 16) added by: jonathan, value: f@google.com
+
+Fri Aug 27 12:06:40 2010: EntityEmail for Entity 16) added by: jonathan, value: g@google.com
+
+Fri Aug 27 12:33:07 2010: Deleted: Tag_16_a by jonathan.
+Fri Aug 27 12:34:00 2010: Deleted: Tag_16_b by jonathan.
+Fri Aug 27 12:36:18 2010: Deleted: Tag_16_2 by jonathan.
+Fri Aug 27 12:51:22 2010: Entity.other_contact(16) changed by: jonathan to: Other
+
+Fri Aug 27 13:24:15 2010: Deleted: Entity_16 by jonathan.
+Fri Aug 27 13:26:26 2010: Entity.name(23) changed by: jonathan to: World!
+
+Fri Aug 27 13:26:53 2010: Entity.name(23) changed by: jonathan to: Hello world
+
+Fri Aug 27 13:27:10 2010: Deleted: Entity_23 by jonathan.
+Fri Aug 27 13:28:49 2010: Entity.name(23) changed by: jonathan to: bar
+
+Fri Aug 27 13:29:07 2010: Deleted: Entity_23 by jonathan.
+Fri Aug 27 13:30:22 2010: Entity.name(23) changed by: jonathan to: Test
+
+Fri Aug 27 13:30:34 2010: Deleted: Entity_23 by jonathan.
+Fri Aug 27 13:40:37 2010: Entity.name(23) changed by: jonathan to: test
+
+Fri Aug 27 13:42:11 2010: Deleted: Entity_23 by jonathan.
+Fri Aug 27 13:43:09 2010: Entity.name(23) changed by: jonathan to: test2
+
+Fri Aug 27 13:53:00 2010: Entity.name(25) changed by: jonathan to: test4
+
+Fri Aug 27 13:53:26 2010: EntityURL for Entity 25) added by: jonathan, value: http://google.com/
+
+Fri Aug 27 14:02:38 2010: Entity.name(27) changed by: jonathan to: test5
+
+Fri Aug 27 14:16:31 2010: EntityEmail for Entity 27) added by: jonathan, value: a@b.com
+
+Fri Aug 27 14:17:12 2010: Entity.name(29) changed by: jonathan to: test6
+
+Mon Aug 30 12:49:55 2010: Entity.description(3) changed by: jonathan to: Test
+
+Mon Aug 30 13:18:21 2010: Entity.description(3) changed by: jonathan to: Test description
+
+Mon Aug 30 13:25:05 2010: Entity.description(3) changed by: jonathan to: Test description.
+
+Mon Aug 30 14:46:11 2010: Entity.name(12) changed by: jonathan to: Test
+
+Mon Aug 30 14:47:08 2010: Entity.name(13) changed by: jonathan to: Test.
+
+Mon Aug 30 14:52:30 2010: Entity.name(14) changed by: jonathan to: Test.
+
+Mon Aug 30 14:52:58 2010: Image for entity 13 changed by jonathan".
+Mon Aug 30 14:53:36 2010: Image for entity 12 changed by jonathan".
+Mon Aug 30 14:58:33 2010: Image for entity 14 changed by jonathan".
+Mon Aug 30 15:54:03 2010: Entity.name(12) changed by: jonathan to: Test 2
+
+Mon Aug 30 15:54:52 2010: Entity.name(12) changed by: jonathan to: Test 2+
+
+Mon Aug 30 15:58:35 2010: Entity.description(12) changed by: jonathan to: Test description.
+
+Mon Aug 30 16:12:44 2010: Entity.name(2) changed by: jonathan to: Test 3
+
+Mon Aug 30 16:12:54 2010: Entity.description(2) changed by: jonathan to: Test description.
+
+Mon Aug 30 16:13:31 2010: Entity.name(3) changed by: jonathan to: Test
+
+Mon Aug 30 16:15:23 2010: Entity.name(5) changed by: jonathan to: foo
+
+Mon Aug 30 16:23:52 2010: Image for entity 5 changed by jonathan".
+Mon Aug 30 16:26:42 2010: Image for entity 2 changed by jonathan".
+Mon Aug 30 16:27:34 2010: Image for entity 3 changed by jonathan".
+Mon Aug 30 16:41:17 2010: Phone for Entity 2) added by: jonathan, value: (312) 555-1212
+
+Mon Aug 30 16:43:43 2010: Phone for Entity 2) added by: jonathan, value: (800) 555-1212
+
+Mon Aug 30 16:46:49 2010: Email for Entity 2) added by: jonathan, value: a@b.com
+
+Mon Aug 30 16:48:27 2010: URL for Entity 2) added by: jonathan, value: http://google.com/
+
+Mon Aug 30 16:56:37 2010: Entity.other_contact(2) changed by: jonathan to: Basic contact info.
+
+Tue Aug 31 16:42:06 2010: Deleted: tag_2_1 by jonathan.
+Tue Aug 31 16:42:21 2010: Deleted: tag_2_1 by jonathan.
+Tue Aug 31 16:43:53 2010: Deleted: tag_2_1 by jonathan.
+Tue Aug 31 16:44:26 2010: Deleted: URL_1 by jonathan.
+Tue Aug 31 16:44:35 2010: Deleted: Email_1 by jonathan.
+Tue Aug 31 16:45:13 2010: Deleted: tag_2_1 by jonathan.
+Tue Aug 31 16:48:48 2010: Deleted: tag_2_1 by jonathan.
+Tue Aug 31 16:50:33 2010: Deleted: tag_2_2 by jonathan.
+Tue Aug 31 16:50:58 2010: Deleted: tag_2_1 by jonathan.
+Tue Aug 31 16:51:00 2010: Deleted: tag_2_1 by jonathan.
+Tue Aug 31 16:51:50 2010: Deleted: tag_2_2 by jonathan.
+Tue Aug 31 16:52:25 2010: Deleted: tag_2_2 by jonathan.
+Tue Aug 31 16:52:58 2010: Deleted: tag_2_2 by jonathan.
+Tue Aug 31 16:53:30 2010: Deleted: Tag_2_1 by jonathan.
+Tue Aug 31 16:53:45 2010: Deleted: Tag_2_3 by jonathan.
+Tue Aug 31 16:55:05 2010: Deleted: Tag_2_4 by jonathan.
+Tue Aug 31 17:17:11 2010: Deleted: tag_2_1 by jonathan.
+Tue Aug 31 17:17:27 2010: Deleted: Tag_2_5 by jonathan.
+Tue Aug 31 17:18:23 2010: URL for Entity 2) added by: jonathan, value: http://google.com/
+
+Tue Aug 31 17:19:08 2010: Deleted: tag_2_2 by jonathan.
+Tue Aug 31 17:19:19 2010: Deleted: URL_1 by jonathan.
+Tue Aug 31 17:19:43 2010: Deleted: Phone_2 by jonathan.
+Tue Aug 31 17:52:56 2010: Deleted: tag_2_1 by jonathan.
+Tue Aug 31 17:54:53 2010: Phone for Entity 2) added by: jonathan, value: (800) 555-1212
+
+Tue Aug 31 18:06:33 2010: Deleted: Tag_2_10 by jonathan.
+Wed Sep  1 10:35:12 2010: Deleted: tag_2_6 by jonathan.
+Wed Sep  1 10:57:00 2010: Entity.gps(2) changed by: jonathan to: 0 0
+
+Wed Sep  1 10:59:51 2010: Entity.gps(2) changed by: jonathan to: 0.0 0.0
+
+Wed Sep  1 11:19:56 2010: Email for Entity 2) added by: jonathan, value: a@b.com
+
+Thu Sep  2 08:14:02 2010: URL for Entity 2) added by: jonathan, value: http://JonathansCorner.com/
+
+Thu Sep  2 08:14:14 2010: URL for Entity 2) added by: jonathan, value: http://google.com/
+
+Thu Sep  2 08:14:23 2010: Email for Entity 2) added by: jonathan, value: c@d.com
+
+Thu Sep  2 08:15:44 2010: Email for Entity 2) added by: jonathan, value: e@f.com
+
+Thu Sep  2 08:16:03 2010: Email for Entity 2) added by: jonathan, value: g@h.com
+
+Thu Sep  2 08:17:14 2010: Email for Entity 2) added by: jonathan, value: i@j.com
+
+Thu Sep  2 08:17:26 2010: Email for Entity 2) added by: jonathan, value: k@l.com
+
+Thu Sep  2 08:19:26 2010: Email for Entity 2) added by: jonathan, value: m@n.com
+
+Thu Sep  2 08:19:26 2010: Email for Entity 2) added by: jonathan, value: m@n.com
+
+Thu Sep  2 08:19:36 2010: Email for Entity 2) added by: jonathan, value: n@o.com
+
+Thu Sep  2 08:19:48 2010: Email for Entity 2) added by: jonathan, value: p@q.com
+
+Thu Sep  2 08:20:28 2010: Email for Entity 2) added by: jonathan, value: r@s.com
+
+Thu Sep  2 08:21:39 2010: Email for Entity 2) added by: jonathan, value: t@u.com
+
+Thu Sep  2 08:22:18 2010: Email for Entity 2) added by: jonathan, value: v@w.com
+
+Thu Sep  2 08:27:02 2010: URL for Entity 2) added by: jonathan, value: http://stornge.com/
+
+Thu Sep  2 08:27:53 2010: URL for Entity 2) added by: jonathan, value: http://ian.stornge.com/
+
+Thu Sep  2 08:28:15 2010: Deleted: tag_2_8 by jonathan.
+Thu Sep  2 10:29:41 2010: Deleted: Email_13 by jonathan.
+Thu Sep  2 10:32:15 2010: Deleted: Email_12 by jonathan.
+Thu Sep  2 12:29:18 2010: Entity.name(5) changed by: jonathan to: Test
+
+Thu Sep  2 12:29:51 2010: Entity.name(6) changed by: jonathan to: Test
+
+Thu Sep  2 12:30:40 2010: Entity.name(7) changed by: jonathan to: Test
+
+Thu Sep  2 12:31:27 2010: Image for entity 6 changed by jonathan".
+Thu Sep  2 13:42:25 2010: Entity.name(5) changed by: jonathan to: Test 1
+
+Thu Sep  2 13:42:32 2010: Entity.name(6) changed by: jonathan to: Test 0
+
+Thu Sep  2 13:42:39 2010: Entity.name(7) changed by: jonathan to: Test 2
+
+Thu Sep  2 13:42:39 2010: Entity.name(7) changed by: jonathan to: Test 2
+
+Thu Sep  2 14:48:04 2010: Entity.gps(6) changed by: jonathan to: 0, 0
+
+Thu Sep  2 14:50:29 2010: Entity.gps(6) changed by: jonathan to: 0.0, 0.0
+
+Thu Sep  2 15:42:31 2010: Entity.name(2) changed by: jonathan to: Test
+
+Thu Sep  2 15:59:52 2010: URL for Entity 2) added by: jonathan, value: http://google.com/
+
+Thu Sep  2 16:05:26 2010: Image for entity 2 changed by jonathan".
+Thu Sep  2 16:07:13 2010: Image for entity 3 changed by jonathan".
+Thu Sep  2 16:41:12 2010: Phone for Entity 2) added by: jonathan, value: 888-888-8888
+
+Thu Sep  2 18:04:26 2010: Entity.gps(2) changed by: jonathan to: 0 0
+
+Fri Sep  3 08:10:01 2010: Entity.undefined(2) changed by: jonathan to: Test
+
+Mon Sep  6 14:33:20 2010: Entity.name(9) changed by: jonathan to: Test Name
+
+Mon Sep  6 14:33:28 2010: Entity.title(9) changed by: jonathan to: Test title
+
+Tue Sep  7 16:00:37 2010: URL for Entity 17) added by: jonathan, value: http://google.com/
+
+Thu Sep  9 01:07:42 2010: Entity.name(20) changed by: jonathan to: Test 1
+
+Thu Sep  9 01:07:53 2010: Entity.name(23) changed by: jonathan to: Test 2
+
+Thu Sep  9 01:08:01 2010: Entity.name(30) changed by: jonathan to: Test 3
+
+Fri Sep 10 14:28:35 2010: Entity.name(31) changed by: jonathan to: Test
+
+Fri Sep 10 14:28:49 2010: Status for Entity 31 added by: jonathan, value: Test status.
+
+Fri Sep 10 16:38:26 2010: Tags for Entity 2 added by: jonathan, value: a b c
+
+Fri Sep 10 16:40:50 2010: Tags for Entity 3 added by: jonathan, value: a b c
+
+Fri Sep 10 16:41:34 2010: Tags for Entity 4 added by: jonathan, value: a b c
+
+Fri Sep 10 16:41:50 2010: Entity.name(4) changed by: jonathan to: Test
+
+Fri Sep 10 16:52:06 2010: Tags for Entity 2 added by: jonathan, value: a b c
+
+Fri Sep 10 16:52:40 2010: Tags for Entity 4 added by: jonathan, value: a b c
+
+Fri Sep 10 16:54:03 2010: Tags for Entity 5 added by: jonathan, value: a b c
+
+Fri Sep 10 16:54:33 2010: Tags for Entity 6 added by: jonathan, value: a b c
+
+Fri Sep 10 16:54:36 2010: Deleted: tag_6_2 by jonathan.
+Fri Sep 10 16:55:29 2010: Tags for Entity 7 added by: jonathan, value: a b c
+
+Fri Sep 10 16:56:01 2010: Deleted: tag_7_2 by jonathan.
+Fri Sep 10 16:56:20 2010: Deleted: tag_7_1 by jonathan.
+Fri Sep 10 16:58:35 2010: Tags for Entity 8 added by: jonathan, value: a b c
+
+Fri Sep 10 16:58:40 2010: Deleted: tag_8_2 by jonathan.
+Mon Sep 13 09:12:31 2010: Entity.name(13) changed by: jonathan to: Name
+
+Mon Sep 13 09:13:08 2010: Entity.name(14) changed by: jonathan to: Name.
+
+Mon Sep 13 09:26:19 2010: Entity.name(15) changed by: jonathan to: Test name.
+
+Mon Sep 13 09:26:44 2010: Entity.name(15) changed by: jonathan to: Test name II.
+
+Mon Sep 13 09:30:44 2010: Entity.name(16) changed by: jonathan to: Test name.
+
+Mon Sep 13 09:30:54 2010: Entity.name(16) changed by: jonathan to: Test name II.
+
+Mon Sep 13 09:31:33 2010: Entity.name(17) changed by: jonathan to: Test name.
+
+Mon Sep 13 09:31:43 2010: Entity.name(17) changed by: jonathan to: Test name II.
+
+Mon Sep 13 09:33:52 2010: Entity.name(18) changed by: jonathan to: Test name.
+
+Mon Sep 13 09:34:03 2010: Entity.name(18) changed by: jonathan to: Test name II
+
+Mon Sep 13 09:35:44 2010: Entity.name(19) changed by: jonathan to: Test name.
+
+Mon Sep 13 09:35:54 2010: Entity.name(19) changed by: jonathan to: Test name II.
+
+Mon Sep 13 09:39:15 2010: Entity.name(20) changed by: jonathan to: Test name.
+
+Mon Sep 13 09:39:23 2010: Entity.name(20) changed by: jonathan to: Test name II.
+
+Mon Sep 13 09:41:26 2010: Entity.name(21) changed by: jonathan to: Test name.
+
+Mon Sep 13 09:41:35 2010: Entity.name(21) changed by: jonathan to: Test name II.
+
+Mon Sep 13 09:49:15 2010: Entity.name(22) changed by: jonathan to: Test name.
+
+Mon Sep 13 09:49:22 2010: Entity.name(22) changed by: jonathan to: Test name II.
+
+Mon Sep 13 09:51:40 2010: Entity.name(23) changed by: jonathan to: Test name.
+
+Mon Sep 13 09:51:49 2010: Entity.name(23) changed by: jonathan to: Test name II.
+
+Mon Sep 13 09:52:58 2010: Entity.name(24) changed by: jonathan to: Test name.
+
+Mon Sep 13 09:53:03 2010: Entity.name(24) changed by: jonathan to: Test name II.
+
+Mon Sep 13 09:54:55 2010: Entity.name(25) changed by: jonathan to: Test name.
+
+Mon Sep 13 09:55:00 2010: Entity.name(25) changed by: jonathan to: Test name II.
+
+Mon Sep 13 09:56:31 2010: Entity.name(26) changed by: jonathan to: Test name.
+
+Mon Sep 13 09:56:40 2010: Entity.name(26) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:03:07 2010: Entity.name(27) changed by: jonathan to: Test name.
+
+Mon Sep 13 10:03:13 2010: Entity.name(27) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:04:14 2010: Entity.name(31) changed by: jonathan to: Test name.
+
+Mon Sep 13 10:04:22 2010: Entity.name(31) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:06:05 2010: Entity.name(32) changed by: jonathan to: Test name.
+
+Mon Sep 13 10:06:11 2010: Entity.name(32) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:06:40 2010: Entity.name(33) changed by: jonathan to: Test name.
+
+Mon Sep 13 10:06:48 2010: Entity.name(33) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:08:26 2010: Entity.name(34) changed by: jonathan to: Test name.
+
+Mon Sep 13 10:08:38 2010: Entity.name(34) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:09:30 2010: Entity.name(35) changed by: jonathan to: Test name.
+
+Mon Sep 13 10:09:36 2010: Entity.name(35) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:11:08 2010: Entity.name(36) changed by: jonathan to: Test name
+
+Mon Sep 13 10:11:15 2010: Entity.name(36) changed by: jonathan to: Test name II
+
+Mon Sep 13 10:12:30 2010: Entity.name(37) changed by: jonathan to: Test name.
+
+Mon Sep 13 10:12:35 2010: Entity.name(37) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:12:58 2010: Entity.name(38) changed by: jonathan to: Test name.
+
+Mon Sep 13 10:13:03 2010: Entity.name(38) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:14:46 2010: Entity.name(39) changed by: jonathan to: Test name.
+
+Mon Sep 13 10:14:52 2010: Entity.name(39) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:20:54 2010: Entity.name(2) changed by: jonathan to: Test name.
+
+Mon Sep 13 10:20:59 2010: Entity.name(2) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:23:09 2010: Entity.name(2) changed by: jonathan to: Test name.
+
+Mon Sep 13 10:23:15 2010: Entity.name(2) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:24:16 2010: Entity.name(2) changed by: jonathan to: Test name III.
+
+Mon Sep 13 10:25:26 2010: Entity.name(2) changed by: jonathan to: Test name IV.
+
+Mon Sep 13 10:35:27 2010: Entity.name(5) changed by: jonathan to: Test name I.
+
+Mon Sep 13 10:35:41 2010: Entity.name(5) changed by: jonathan to: Test name II.
+
+Mon Sep 13 10:36:04 2010: Entity.name(5) changed by: jonathan to: Test name III.
+
+Mon Sep 13 10:36:35 2010: Entity.name(6) changed by: jonathan to: Test name 1.
+
+Mon Sep 13 10:37:31 2010: Entity.name(7) changed by: jonathan to: Test name 1.
+
+Mon Sep 13 10:38:06 2010: Entity.name(7) changed by: jonathan to: Test name 2.
+
+Mon Sep 13 10:39:32 2010: Entity.name(8) changed by: jonathan to: Test name 1.
+
+Mon Sep 13 10:44:43 2010: Entity.name(2) changed by: jonathan to: Test name IV.
+
+Mon Sep 13 10:45:52 2010: Entity.name(2) changed by: jonathan to: Test name V.
+
+Mon Sep 13 10:49:30 2010: Entity.name(2) changed by: jonathan to: Test name VI.
+
+Mon Sep 13 10:49:37 2010: Entity.name(2) changed by: jonathan to: Test name VII.
+
+Mon Sep 13 10:57:36 2010: Entity.description(5) changed by: jonathan to: Description.
+Description, line 2
+
+Mon Sep 13 10:58:52 2010: Entity.title(2) changed by: jonathan to: VP of Something.
+
+Mon Sep 13 10:59:35 2010: Entity.description(2) changed by: jonathan to: Description here.
+
+Mon Sep 13 11:18:51 2010: Entity.postal_address(2) changed by: jonathan to: Postal address.
+
+Mon Sep 13 11:37:30 2010: Phone for Entity 3) added by: jonathan, value: 555-1212
+
+Mon Sep 13 11:37:33 2010: Deleted: Phone_2 by jonathan.
+Mon Sep 13 11:37:44 2010: Phone for Entity 3) added by: jonathan, value: 111-2222
+
+Mon Sep 13 11:39:14 2010: Entity.description(2) changed by: jonathan to: Model description.
+
+Mon Sep 13 11:40:15 2010: Deleted: Phone_1 by jonathan.
+Mon Sep 13 11:40:32 2010: Phone for Entity 2) added by: jonathan, value: 555-1212
+
+Mon Sep 13 11:40:36 2010: Deleted: Phone_4 by jonathan.
+Mon Sep 13 11:41:03 2010: Deleted: Phone_3 by jonathan.
+Mon Sep 13 13:36:17 2010: Status for Entity 4 added by: jonathan, value: Test status.
+
+Mon Sep 13 13:50:31 2010: Status for Entity 2 added by: jonathan, value: Test status.
+
+Mon Sep 13 13:50:52 2010: Entity.name(5) changed by: jonathan to: Test user.
+
+Mon Sep 13 13:51:03 2010: Status for Entity 5 added by: jonathan, value: Test status II.
+
+Mon Sep 13 13:53:30 2010: Status for Entity 5 added by: jonathan, value: Test status III.
+
+Mon Sep 13 13:53:58 2010: Status for Entity 5 added by: jonathan, value: Test status IV.
+
+Mon Sep 13 13:54:50 2010: Status for Entity 5 added by: jonathan, value: Test Status V
+
+Mon Sep 13 13:55:49 2010: Status for Entity 5 added by: jonathan, value: Test Status VI.
+
+Mon Sep 13 13:59:49 2010: Phone for Entity 5) added by: jonathan, value: 555-1212
+
+Mon Sep 13 13:59:52 2010: Deleted: Phone_5 by jonathan.
+Mon Sep 13 14:02:23 2010: Phone for Entity 5) added by: jonathan, value: 555-1212
+
+Mon Sep 13 14:02:27 2010: Deleted: Phone_6 by jonathan.
+Mon Sep 13 14:04:24 2010: Tags for Entity 5 added by: jonathan, value: a b 
+
+Mon Sep 13 14:04:27 2010: Deleted: tag_5_1 by jonathan.
+Mon Sep 13 14:10:06 2010: Tags for Entity 5 added by: jonathan, value: c
+
+Mon Sep 13 14:11:18 2010: Deleted: tag_5_3 by jonathan.
+Mon Sep 13 14:13:17 2010: Deleted: tag_5_2 by jonathan.
+Mon Sep 13 14:14:45 2010: Tags for Entity 5 added by: jonathan, value: a b c
+
+Mon Sep 13 14:14:48 2010: Deleted: tag_5_1 by jonathan.
+Mon Sep 13 14:16:22 2010: Deleted: tag_5_3 by jonathan.
+Mon Sep 13 14:17:53 2010: Deleted: tag_5_2 by jonathan.
+Mon Sep 13 14:19:00 2010: Deleted: Phone_6 by jonathan.
+Mon Sep 13 14:19:11 2010: Tags for Entity 5 added by: jonathan, value: a b c
+
+Mon Sep 13 14:19:13 2010: Deleted: tag_5_2 by jonathan.
+Mon Sep 13 14:22:37 2010: Deleted: tag_5_1 by jonathan.
+Mon Sep 13 14:34:15 2010: Tags for Entity 5 added by: jonathan, value: a b
+
+Mon Sep 13 14:34:25 2010: Deleted: tag_5_1 by jonathan.
+Mon Sep 13 14:35:51 2010: Deleted: tag_5_2 by jonathan.
+Mon Sep 13 14:41:48 2010: Tags for Entity 5 added by: jonathan, value: a b c
+
+Mon Sep 13 14:41:55 2010: Deleted: tag_5_1 by jonathan.
+Mon Sep 13 14:43:18 2010: Deleted: tag_5_2 by jonathan.
+Mon Sep 13 14:44:58 2010: Deleted: tag_5_3 by jonathan.
+Mon Sep 13 14:45:19 2010: Tags for Entity 5 added by: jonathan, value: a b c
+
+Mon Sep 13 14:45:26 2010: Deleted: tag_5_2 by jonathan.
+Mon Sep 13 14:46:05 2010: Deleted: tag_5_1 by jonathan.
+Mon Sep 13 14:47:18 2010: Deleted: tag_5_3 by jonathan.
+Mon Sep 13 14:52:07 2010: Tags for Entity 5 added by: jonathan, value: a b c d
+
+Mon Sep 13 14:52:15 2010: Deleted: tag_5_1 by jonathan.
+Mon Sep 13 14:59:24 2010: Deleted: Tag_5_2 by jonathan.
+Mon Sep 13 14:59:48 2010: Deleted: tag_5_3 by jonathan.
+Mon Sep 13 15:00:17 2010: Deleted: tag_5_4 by jonathan.
+Mon Sep 13 15:00:39 2010: Tags for Entity 5 added by: jonathan, value: a b c d
+
+Mon Sep 13 15:00:43 2010: Deleted: tag_5_1 by jonathan.
+Mon Sep 13 15:01:28 2010: Deleted: tag_5_2 by jonathan.
+Mon Sep 13 15:03:37 2010: Deleted: tag_2_2 by jonathan.
+Mon Sep 13 15:18:50 2010: Phone for Entity 6) added by: jonathan, value: (630) 890-5012
+
+Mon Sep 13 15:19:27 2010: URL for Entity 7) added by: jonathan, value: http://google.com/
+
+Mon Sep 13 15:23:38 2010: URL for Entity 2) added by: jonathan, value: google.com
+
+Mon Sep 13 15:23:47 2010: Deleted: URL_2 by jonathan.
+Mon Sep 13 15:23:55 2010: Deleted: URL_2 by jonathan.
+Mon Sep 13 15:29:58 2010: URL for Entity 2) added by: jonathan, value: bing.com
+
+Mon Sep 13 15:36:07 2010: Deleted: URL_3 by jonathan.
+Mon Sep 13 15:36:14 2010: URL for Entity 2) added by: jonathan, value: bing.com
+
+Mon Sep 13 15:37:23 2010: URL for Entity 1) added by: jonathan, value: google.com
+
+Mon Sep 13 17:03:14 2010: URL for Entity 2) added by: jonathan, value: google.com
+
+Mon Sep 13 17:03:22 2010: URL for Entity 2) added by: jonathan, value: bing.com
+
+Mon Sep 13 17:04:07 2010: Entity.name(3) changed by: jonathan to: Test
+
+Mon Sep 13 17:04:21 2010: URL for Entity 3) added by: jonathan, value: yahoo.com
+
+Mon Sep 13 17:06:45 2010: URL for Entity 3) added by: jonathan, value: lycos.com
+
+Mon Sep 13 17:07:57 2010: URL for Entity 3) added by: jonathan, value: excite.com
+
+Mon Sep 13 18:35:13 2010: Entity.name(4) changed by: jonathan to: Test 2
+
+Tue Sep 14 12:22:53 2010: Department for Entity 3) set by: jonathan, value: department.3
+
+Tue Sep 14 13:05:26 2010: Entity.name(1) changed by: jonathan to: Test
+
+Tue Sep 14 13:09:36 2010: Entity.name(2) changed by: jonathan to: Test Pre
+
+Tue Sep 14 13:09:41 2010: Entity.name(2) changed by: jonathan to: Test Post
+
+Tue Sep 14 18:13:05 2010: Entity.name(2) changed by: jonathan to: Test
+
+Tue Sep 14 18:17:29 2010: Tags for Entity 2 added by: jonathan, value: a b c
+
+Tue Sep 14 18:19:53 2010: Deleted: tag_2_2 by jonathan.
+Tue Sep 14 18:21:40 2010: Deleted: tag_2_1 by jonathan.
+Tue Sep 14 18:26:01 2010: Tags for Entity 2 added by: jonathan, value: a b c d e f
+
+Tue Sep 14 18:26:05 2010: Deleted: tag_2_8 by jonathan.
+Tue Sep 14 18:27:28 2010: Deleted: tag_2_5 by jonathan.
+Tue Sep 14 18:27:46 2010: Deleted: tag_2_7 by jonathan.
+Tue Sep 14 18:28:03 2010: Email for Entity 2 added by: jonathan, value: a@b.com
+
+Tue Sep 14 18:28:06 2010: Deleted: Email_1 by jonathan.
+Tue Sep 14 18:29:24 2010: Deleted: tag_2_9 by jonathan.
+Tue Sep 14 18:29:54 2010: Deleted: tag_2_6 by jonathan.
+Tue Sep 14 18:30:26 2010: Deleted: tag_2_4 by jonathan.
+Tue Sep 14 18:30:54 2010: Tags for Entity 2 added by: jonathan, value: a b c d e f g h
+
+Tue Sep 14 18:30:58 2010: Deleted: tag_2_12 by jonathan.
+Tue Sep 14 18:32:01 2010: Deleted: tag_2_14 by jonathan.
+Tue Sep 14 18:34:25 2010: Deleted: tag_2_17 by jonathan.
+Tue Sep 14 18:36:43 2010: Deleted: tag_2_15 by jonathan.
+Tue Sep 14 18:39:10 2010: Deleted: tag_2_16 by jonathan.
+Tue Sep 14 18:39:28 2010: Deleted: tag_2_11 by jonathan.
+Tue Sep 14 18:48:48 2010: Deleted: Tag_13 by jonathan.
+Wed Sep 15 10:12:45 2010: Email for Entity 2 added by: jonathan, value: c@d.com
+
+Thu Sep 16 09:25:40 2010: Deleted: Entity_2 by jonathan.
+Thu Sep 16 09:25:41 2010: Deleted: Entity_2 by jonathan.
+Thu Sep 16 09:27:48 2010: Deleted: Email_1 by jonathan.
+Thu Sep 16 09:27:52 2010: Deleted: Email_2 by jonathan.
+Thu Sep 16 09:27:54 2010: Deleted: Tag_13 by jonathan.
+Thu Sep 16 09:27:57 2010: Deleted: Tag_10 by jonathan.
+Thu Sep 16 09:28:52 2010: Phone for Entity 3) added by: jonathan, value: (630) 890-8007
+
+Thu Sep 16 09:29:38 2010: Entity.name(4) changed by: jonathan to: Joe Hayward
+
+Thu Sep 16 09:29:56 2010: Deleted: Phone_1 by jonathan.
+Thu Sep 16 09:30:05 2010: Entity.name(5) changed by: jonathan to: Kirk Hayward
+
+Thu Sep 16 09:30:28 2010: Phone for Entity 5) added by: jonathan, value: (630) 890-0001
+
+Thu Sep 16 09:30:48 2010: Entity.name(6) changed by: jonathan to: John Hayward, Jr.
+
+Thu Sep 16 09:30:58 2010: Entity.name(6) changed by: jonathan to: Kirk Hayward
+
+Thu Sep 16 09:31:26 2010: Entity.name(7) changed by: jonathan to: John Hayward
+
+Thu Sep 16 09:31:55 2010: Phone for Entity 7) added by: jonathan, value: (630) 890-8003
+
+Thu Sep 16 09:31:58 2010: Deleted: Phone_2 by jonathan.
+Thu Sep 16 09:32:52 2010: Deleted: Phone_3 by jonathan.
+Thu Sep 16 09:33:39 2010: Deleted: Entity_5 by jonathan.
+Thu Sep 16 09:34:01 2010: Phone for Entity 5) added by: jonathan, value: (630) 890-0007
+
+Thu Sep 16 09:38:09 2010: Phone for Entity 4) added by: jonathan, value: (630) 890-6007
+
+Thu Sep 16 09:38:42 2010: Phone for Entity 6) added by: jonathan, value: (630) 890-0001
+
+Thu Sep 16 09:39:12 2010: Phone for Entity 7) added by: jonathan, value: (630) 890-0003
+
+Thu Sep 16 09:40:55 2010: Entity.name(9) changed by: jonathan to: Linda Hayward
+
+Thu Sep 16 09:41:19 2010: Phone for Entity 9) added by: jonathan, value: (630) 456-5231
+
+Thu Sep 16 09:42:22 2010: Entity.name(10) changed by: jonathan to: Grandma and Grandpa Hayward
+
+Thu Sep 16 09:42:45 2010: Entity.postal_address(10) changed by: jonathan to: 703 W Herbert Ave, #168
+Reedley,CA
+
+Thu Sep 16 09:43:42 2010: Entity.postal_address(10) changed by: jonathan to: 703 W Herbert Ave, #168
+Reedley, CA 93654-3941
+
+Thu Sep 16 09:45:07 2010: Entity.name(11) changed by: jonathan to: Matthew Hayward
+
+Thu Sep 16 09:49:40 2010: Tag for Entity 6) added by: jonathan, value: father
+
+Thu Sep 16 09:49:55 2010: Deleted: Tag_19 by jonathan.
+Thu Sep 16 09:50:02 2010: Tag for Entity 6) added by: jonathan, value: brother
+
+Thu Sep 16 09:50:24 2010: Tag for Entity 10) added by: jonathan, value: grandparents
+
+Thu Sep 16 09:50:36 2010: Tag for Entity 9) added by: jonathan, value: mother
+
+Thu Sep 16 09:51:12 2010: Tag for Entity 11) added by: jonathan, value: brother
+
+Thu Sep 16 09:54:46 2010: Entity.name(12) changed by: jonathan to: Jonathan Hayward
+
+Thu Sep 16 09:55:40 2010: Entity.name(13) changed by: jonathan to: Jonathan Hayward
+
+Thu Sep 16 09:56:14 2010: Deleted: Entity_12 by jonathan.
+Thu Sep 16 10:01:24 2010: Image for entity 13 changed by jonathan".
+Thu Sep 16 10:03:20 2010: URL for Entity 13) added by: jonathan, value: JonathansCorner.com
+
+Thu Sep 16 10:03:39 2010: URL for Entity 9) added by: jonathan, value: haywardfamily.org/linda
+
+Thu Sep 16 11:03:27 2010: Entity.name(14) changed by: jonathan to: Maitreya B.
+
+Thu Sep 16 11:03:38 2010: Email for Entity 14 added by: jonathan, value: maitreyab@packtpub.com
+
+Thu Sep 16 11:03:52 2010: Entity.description(14) changed by: jonathan to: Acquisition editor at Packt.
+
+Thu Sep 16 11:17:53 2010: Status for Entity 14 added by: jonathan, value: Waiting on hearing back.
+
+Thu Sep 16 11:18:00 2010: Status for Entity 14 added by: jonathan, value: Waiting on hearing back.
+
+Thu Sep 16 11:19:50 2010: Entity.name(15) changed by: jonathan to: Guybrush Hayward
+
+Thu Sep 16 11:20:06 2010: Status for Entity 15 added by: jonathan, value: We don't know where he is now.
+
+Thu Sep 16 11:32:25 2010: Status for Entity 15 added by: jonathan, value: Found in my room.
+
+Thu Sep 16 12:02:14 2010: Deleted: Entity_3 by jonathan.
+Thu Sep 16 12:02:33 2010: Deleted: Entity_8 by jonathan.
+Thu Sep 16 12:07:30 2010: Deleted: Entity_16 by jonathan.
+Thu Sep 16 12:07:36 2010: Deleted: Entity_16 by jonathan.
+Thu Sep 16 12:09:48 2010: Deleted: Entity_18 by jonathan.
+Thu Sep 16 12:21:37 2010: Deleted: Entity_19 by jonathan.
+Thu Sep 16 12:22:15 2010: Deleted: Entity_20 by jonathan.
+Thu Sep 16 13:02:01 2010: Deleted: Entity_17 by jonathan.
+Thu Sep 16 15:01:21 2010: Entity.name(4) changed by: jonathan to: Fred
+
+Thu Sep 16 15:06:21 2010: Deleted: Entity_1 by jonathan.
+Thu Sep 16 15:06:32 2010: Deleted: Entity_1 by jonathan.
+Thu Sep 16 15:06:38 2010: Deleted: Entity_2 by jonathan.
+Thu Sep 16 15:06:45 2010: Deleted: Entity_3 by jonathan.
+Thu Sep 16 15:07:45 2010: Entity.time_zone(4) changed by: jonathan to: -6.0
+
+Thu Sep 16 15:09:29 2010: Entity.time_zone(4) changed by: jonathan to: -6.0
+
+Thu Sep 16 15:12:20 2010: Entity.time_zone(4) changed by: jonathan to: -6.0
+
+Thu Sep 16 15:16:22 2010: Entity.name(1) changed by: jonathan to: Fred
+
+Thu Sep 16 15:16:28 2010: Entity.time_zone(1) changed by: jonathan to: -6.0
+
+Thu Sep 16 16:25:09 2010: Entity.name(2) changed by: jonathan to: Joel Goyeva
+
+Thu Sep 16 16:25:19 2010: Entity.time_zone(2) changed by: jonathan to: 5.5
+
+Fri Sep 17 11:36:26 2010: Entity.name(4) changed by: jonathan to: Time test
+
+Fri Sep 17 11:36:36 2010: Entity.time_zone(4) changed by: jonathan to: -6.0
+
+Fri Sep 17 11:36:42 2010: Entity.time_zone(4) changed by: jonathan to: -5.0
+
+Fri Sep 17 12:00:58 2010: Entity.time_zone(1) changed by: jonathan to: 5.5
+
+Fri Sep 17 12:17:27 2010: Entity.name(1) changed by: jonathan to: Joel Goyeva
+
+Fri Sep 17 12:17:44 2010: Entity.name(2) changed by: jonathan to: Jonathan Hayward
+
+Fri Sep 17 12:17:56 2010: Entity.time_zone(2) changed by: jonathan to: -6.0
+
+Wed Sep 22 15:22:18 2010: Entity.name(3) changed by: jonathan to: Alice Amazing
+
+Wed Sep 22 15:23:19 2010: Image for entity 2 changed by jonathan".
+Wed Sep 22 15:24:51 2010: Image for entity 2 changed by jonathan".
+Wed Sep 22 15:25:35 2010: URL for Entity 2) added by: jonathan, value: JonathansCorner.com
+
+Wed Sep 22 15:25:53 2010: Email for Entity 2 added by: jonathan, value: jonathan.hayward@pobox.com
+
+Wed Sep 22 15:28:45 2010: Tag for Entity 2) added by: jonathan, value: Ajax CSS HTML Java JavaScript JSON JSP Perl PHP Python SQL XHTML XML
+
+Wed Sep 22 15:28:58 2010: Deleted: Tag_1 by jonathan.
+Wed Sep 22 15:29:06 2010: Tag for Entity 2) added by: jonathan, value: Ajax
+
+Wed Sep 22 15:29:12 2010: Tag for Entity 2) added by: jonathan, value: CSS
+
+Wed Sep 22 15:29:19 2010: Tag for Entity 2) added by: jonathan, value: HTML
+
+Wed Sep 22 15:29:29 2010: Tag for Entity 2) added by: jonathan, value: XHTML
+
+Wed Sep 22 15:29:34 2010: Tag for Entity 2) added by: jonathan, value: RIA
+
+Wed Sep 22 15:29:43 2010: Tag for Entity 2) added by: jonathan, value: Accessibility
+
+Wed Sep 22 15:29:58 2010: Tag for Entity 2) added by: jonathan, value: JSON
+
+Wed Sep 22 15:30:19 2010: Tag for Entity 2) added by: jonathan, value: JavaScript
+
+Wed Sep 22 15:30:37 2010: Tag for Entity 2) added by: jonathan, value: XML
+
+Wed Sep 22 15:30:48 2010: Tag for Entity 2) added by: jonathan, value: Python
+
+Wed Sep 22 15:31:04 2010: Tag for Entity 2) added by: jonathan, value: Perl
+
+Wed Sep 22 15:32:07 2010: Tag for Entity 2) added by: jonathan, value: PHP
+
+Wed Sep 22 15:32:19 2010: Tag for Entity 2) added by: jonathan, value: SQL
+
+Wed Sep 22 15:32:26 2010: Tag for Entity 2) added by: jonathan, value: Django
+
+Wed Sep 22 15:32:47 2010: Tag for Entity 2) added by: jonathan, value: CGI
+
+Wed Sep 22 15:32:54 2010: Tag for Entity 2) added by: jonathan, value: e-Commerce
+
+Wed Sep 22 15:33:06 2010: Tag for Entity 2) added by: jonathan, value: IA
+
+Wed Sep 22 15:33:13 2010: Tag for Entity 2) added by: jonathan, value: Security
+
+Wed Sep 22 15:33:42 2010: Deleted: Tag_17 by jonathan.
+Wed Sep 22 15:33:57 2010: Tag for Entity 2) added by: jonathan, value: E-Commerce
+
+Wed Sep 22 15:34:16 2010: Tag for Entity 2) added by: jonathan, value: Security
+
+Wed Sep 22 15:34:27 2010: Tag for Entity 2) added by: jonathan, value: UI
+
+Wed Sep 22 15:34:33 2010: Tag for Entity 2) added by: jonathan, value: UX
+
+Wed Sep 22 15:35:05 2010: Tag for Entity 2) added by: jonathan, value: Apache
+
+Wed Sep 22 15:35:13 2010: Tag for Entity 2) added by: jonathan, value: LAMP
+
+Wed Sep 22 15:35:41 2010: Image for entity 2 changed by jonathan".
+Wed Sep 22 15:36:15 2010: Tag for Entity 2) added by: jonathan, value: Unix/Linux
+
+Wed Sep 22 15:36:29 2010: Entity.title(2) changed by: jonathan to: Web Developer
+
+Wed Sep 22 15:37:07 2010: Tag for Entity 2) added by: jonathan, value: Mac/OSX
+
+Wed Sep 22 15:37:15 2010: Tag for Entity 2) added by: jonathan, value: Windows
+
+Wed Sep 22 15:38:35 2010: Entity.description(2) changed by: jonathan to: A senior web developer with an interest in usability.Profoundly interested in the human side of computing and making computers nicer for people to use. Fond of the saying, "People who think they hate computers don't really hate computers. What they really hate are lousy programmers."
+
+Wed Sep 22 15:38:51 2010: Entity.description(2) changed by: jonathan to: A senior web developer with an interest in usability. Profoundly interested in the human side of computing and making computers nicer for people to use. Fond of the saying, "People who think they hate computers don't really hate computers. What they really hate are lousy programmers."
+
+Wed Sep 22 16:18:01 2010: Tags for Entity 2 added by: jonathan, value: a b
+
+Wed Sep 22 16:18:06 2010: Deleted: Tag_29 by jonathan.
+Wed Sep 22 16:18:07 2010: Deleted: Tag_30 by jonathan.
+Wed Sep 22 16:53:32 2010: Image for entity 2 changed by jonathan".
+Mon Sep 27 08:58:30 2010: Entity.postal_address(4) changed by: jonathan to: a
+b
+
+Mon Sep 27 11:28:47 2010: Entity.name(5) changed by: jonathan to: Grandma and Grandpa Hayward
+
+Mon Sep 27 11:30:11 2010: Entity.postal_address(5) changed by: jonathan to: 703 W Herbert Ave, #168
+Reedley,CA 93654-3941
+
+Mon Sep 27 11:30:48 2010: Entity.postal_address(5) changed by: jonathan to: 703 W Herbert Ave, #168
+Reedley, CA 93654-3941
+
+Mon Sep 27 11:32:26 2010: Deleted: Tag_7 by jonathan.
+Mon Sep 27 11:32:28 2010: Deleted: Tag_2 by jonathan.
+Mon Sep 27 11:32:30 2010: Deleted: Tag_24 by jonathan.
+Mon Sep 27 11:32:31 2010: Deleted: Tag_16 by jonathan.
+Mon Sep 27 11:32:32 2010: Deleted: Tag_3 by jonathan.
+Mon Sep 27 11:32:33 2010: Deleted: Tag_15 by jonathan.
+Mon Sep 27 11:32:35 2010: Deleted: Tag_20 by jonathan.
+Mon Sep 27 11:32:37 2010: Deleted: Tag_4 by jonathan.
+Mon Sep 27 11:32:39 2010: Deleted: Tag_18 by jonathan.
+Mon Sep 27 11:32:41 2010: Deleted: Tag_8 by jonathan.
+Mon Sep 27 11:32:43 2010: Deleted: Tag_9 by jonathan.
+Mon Sep 27 11:32:45 2010: Deleted: Tag_25 by jonathan.
+Mon Sep 27 11:32:47 2010: Deleted: Tag_27 by jonathan.
+Mon Sep 27 11:32:50 2010: Deleted: Tag_13 by jonathan.
+Mon Sep 27 11:32:51 2010: Deleted: Tag_12 by jonathan.
+Mon Sep 27 11:32:54 2010: Deleted: Tag_11 by jonathan.
+Mon Sep 27 11:32:56 2010: Deleted: Tag_6 by jonathan.
+Mon Sep 27 11:32:57 2010: Deleted: Tag_14 by jonathan.
+Mon Sep 27 11:32:59 2010: Deleted: Tag_19 by jonathan.
+Mon Sep 27 11:33:00 2010: Deleted: Tag_21 by jonathan.
+Mon Sep 27 11:33:02 2010: Deleted: Tag_22 by jonathan.
+Mon Sep 27 11:33:02 2010: Deleted: Tag_23 by jonathan.
+Mon Sep 27 11:33:05 2010: Deleted: Tag_26 by jonathan.
+Mon Sep 27 11:33:06 2010: Deleted: Tag_28 by jonathan.
+Mon Sep 27 11:33:08 2010: Deleted: Tag_5 by jonathan.
+Mon Sep 27 11:33:11 2010: Deleted: Tag_10 by jonathan.
+Mon Sep 27 11:34:30 2010: Tags for Entity 2 added by: jonathan, value: Accessibility    Ajax    Apache    CGI    CSS    Django    E-Commerce    HTML    IA    JSON    JavaScript    LAMP    Mac/OSX    PHP    Perl    Python    RIA    SQL Security    UI    UX    Unix/Linux    Windows    XHTML    XML 
+
+Mon Sep 27 14:01:29 2010: Entity.name(4) changed by: jonathan to: Test
+
+Mon Sep 27 14:02:25 2010: Tags for Entity 5 added by: jonathan, value: grandparents
+
+Mon Sep 27 14:11:44 2010: Entity.time_zone(5) changed by: jonathan to: -8.0
+
+Sat Oct  9 12:53:09 2010: Department for Entity 2) set by: jonathan, value: department.4
+
+Sat Oct 30 13:00:06 2010: Status for Entity 2 added by: jonathan, value: This is a first status.
+
+Sat Oct 30 13:00:18 2010: Status for Entity 2 added by: jonathan, value: This is an update on the first status.
+
+Fri Nov 12 21:00:06 2010: Entity.name(7) changed by: jonathan to: (Insert name here)
+
+Fri Nov 12 21:05:51 2010: A Unicode message was logged
+Fri Nov 12 21:07:06 2010: A Unicode message was logged
+Fri Nov 12 21:11:52 2010: Tags for Entity 9 added by: jonathan, value: def log_message(message):
+    log_file = os.path.join(os.path.dirname(__file__),
+      directory.settings.LOGFILE)
+    open(log_file, u'a').write(time.asctime() + u': ' + 
+      unicode(message).encode(u'utf-8') + u'\n')
+
+def log_message(message):
+    log_file = os.path.join(os.path.dirname(__file__),
+      directory.settings.LOGFILE)
+    open(log_file, u'a').write(time.asctime() + u': ' + 
+      unicode(message).encode(u'utf-8') + u'\n')
+
+def log_message(message):
+    log_file = os.path.join(os.path.dirname(__file__),
+      directory.settings.LOGFILE)
+    open(log_file, u'a').write(time.asctime() + u': ' + 
+      unicode(message).encode(u'utf-8') + u'\n')
+
+
+Fri Nov 12 21:47:35 2010: An error occurred recording this message.
+Fri Nov 12 21:47:40 2010: An error occurred recording this message.
+Fri Nov 12 21:48:28 2010: Email for Entity 7 added by: jonathan, value: a@a.com
+
+Fri Nov 12 21:48:40 2010: Phone for Entity 7) added by: jonathan, value:  def log_message(message):     log_file = os.path.join(os.path.dirname(__file__),       directory.settings.LOGFILE)     open(log_file, u'a').write(time.asctime() + u': ' +       unicode(message).encode(u'utf-8') + u'\n') 
+
+Fri Nov 12 21:48:44 2010: Deleted: Phone_2 by jonathan.
+Fri Nov 12 21:48:48 2010: Deleted: Phone_3 by jonathan.
+Fri Nov 12 21:49:01 2010: Email.email(2) changed by: jonathan to: a@a.co.uk
+
+Fri Nov 12 21:49:24 2010: Email for Entity 7 added by: jonathan, value: b@c.d
+
+Sat Nov 13 10:35:25 2010: Deleted: Entity_7 by jonathan.
+Sat Nov 13 10:35:25 2010: Deleted: Entity_7 by jonathan.
+Sat Nov 13 10:35:31 2010: Deleted: Entity_7 by jonathan.
+Sat Nov 13 10:35:37 2010: Deleted: Entity_8 by jonathan.
+Sat Nov 13 10:35:43 2010: Deleted: Entity_8 by jonathan.
+Sat Nov 13 10:35:48 2010: Deleted: Entity_9 by jonathan.
+Sat Nov 13 10:35:54 2010: Deleted: Entity_6 by jonathan.
+Sat Nov 13 10:36:02 2010: Deleted: Entity_4 by jonathan.
+Sat Nov 13 10:36:06 2010: Deleted: Entity_3 by jonathan.
+Wed Nov 24 17:04:23 2010: An error occurred recording this message.
+Fri Dec 10 17:59:55 2010: An error occurred recording this message.
+Fri Dec 10 18:00:02 2010: An error occurred recording this message.
+Fri Dec 31 10:48:20 2010: An error occurred recording this message.
+Fri Dec 31 10:48:49 2010: An error occurred recording this message.
+Fri Dec 31 11:03:30 2010: An error occurred recording this message.
+Fri Dec 31 11:03:37 2010: An error occurred recording this message.
+Fri Dec 31 11:08:53 2010: An error occurred recording this message.
+Fri Dec 31 17:00:52 2010: An error occurred recording this message.
