@@ -311,6 +311,11 @@ textarea
     width: 80%;
     }
 
+.remainder
+    {
+    display: none;
+    }
+
 #search_form
     {
     margin-left: 40px;
@@ -322,11 +327,6 @@ textarea
     font-size: 2em;
     font-weight: bold;
     margin-left: 10px;
-    }
-
-.remainder
-    {
-    display: none;
     }
 
 .ui-widget-overlay

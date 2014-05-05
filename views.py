@@ -50,7 +50,7 @@ def ajax_delete(request):
     if change_set == None:
         return HttpResponse(u'')
     else:
-        response = u'<!--# ' + str(change_set) + u' #-->'
+        response = u'<!--# ' + unicode(change_set) + u' #-->'
         return HttpResponse(response)
 
 def ajax_download_model(request, model):
@@ -193,14 +193,13 @@ def changelog(request):
         change = candidate
         id = change.change_set
         model_name = unicode(type(change.instance))[7:-2]
-        description = ''
         def get_description(instance):
             description = u''
             if not instance:
                 return u''
             instance_model_name = unicode(type(instance))[7:-2].split(u'.')[-1]
             if hasattr(instance, u'name') and instance.name:
-                description += u' ' + instance.name + u', '
+                return instance.name
             description += u'a'
             if instance_model_name and instance_model_name[0].lower() in \
               u'aeiou':
@@ -215,8 +214,7 @@ def changelog(request):
             message = name + u' ' + u'deleted ' + model_name + u'.'
         elif change.change_type == TEXT_CHANGED:
             message = name + u' changed the ' + \
-              change.field_name + u' on ' + description + \
-              u' from "'
+              change.field_name + u' on ' + model_name + u' from "'
             if change.text_before:
                 message += change.text_before
             message += u'" to "'
@@ -358,7 +356,8 @@ def homepage(request):
         {
         u'id': id,
         u'profile': profile,
-        u'query': urllib.quote(query),
+        u'query': query,
+        u'query_to_quote': query.replace('"', "'"),
         u'search_results': search_results,
         u'settings': directory.settings,
         u'time_zones': directory.models.TIME_ZONE_CHOICES,
@@ -457,7 +456,6 @@ def redirect(request, original_url):
 
 @ajax_login_required
 def save(request):
-    print "Save called."
     session = request.session.session_key
     username = request.user.username
     try:
@@ -467,8 +465,6 @@ def save(request):
         html_id = request.GET[u'id']
         dictionary = request.GET
     value = dictionary[u'value']
-    print "id: " + str(html_id)
-    print "value: " + str(value)
     if not re.match(ur'^\w+$', html_id):
         raise Exception("Invalid HTML id.")
     match = re.match(ur'Status_new_(\d+)', html_id)
@@ -478,7 +474,7 @@ def save(request):
           text = value, username = request.user.username)
         status.save()
         directory.functions.log_message(u'Status for Entity ' +
-          str(match.group(1)) + u' added by: ' + request.user.username +
+          unicode(match.group(1)) + u' added by: ' + request.user.username +
           u', value: ' + value + u'\n')
         change_set = register_edit(INSTANCE_CREATED, status, session, username, 
           request.META[u'REMOTE_ADDR'])
@@ -493,7 +489,7 @@ def save(request):
           directory.models.Entity.objects.get(id = model))
         email.save()
         directory.functions.log_message(u'Email for Entity ' +
-          str(model) + u' added by: ' + request.user.username + u', value: ' +
+          unicode(model) + u' added by: ' + request.user.username + u', value: ' +
           value + u'\n')
         change_set = register_edit(INSTANCE_CREATED, email, session, username,
           request.META[u'REMOTE_ADDR'])
@@ -528,7 +524,7 @@ def save(request):
                           field_name = u'entity', foreign_key_added = entity)
         entity.save()
         directory.functions.log_message(u'Tags for Entity ' +
-          str(match.group(1)) + u' added by: ' + request.user.username +
+          unicode(match.group(1)) + u' added by: ' + request.user.username +
           u', value: ' + value + u'\n')
         return HttpResponse(u'<!--# ' + unicode(change_set) + u' #-->')
     match = re.match(ur'Tag_new_(\d+)', html_id)
@@ -546,7 +542,7 @@ def save(request):
           request.META[u'REMOTE_ADDR'], change_set = change_set, field_name =
           u'entity', foreign_key_added = entity)
         directory.functions.log_message(u'Tag for Entity ' +
-          str(model) + u') added by: ' + request.user.username + u', value: ' +
+          unicode(model) + u') added by: ' + request.user.username + u', value: ' +
           value + u'\n')
         return HttpResponse(u'<!--# ' + unicode(change_set) + u' #-->')
     match = re.match(ur'URL_new_(\d+)', html_id)
@@ -564,7 +560,7 @@ def save(request):
           request.META[u'REMOTE_ADDR'], change_set = change_set, field_name =
           u'entity', foreign_key_added = entity)
         directory.functions.log_message(u'URL for Entity ' +
-          str(model) + u') added by: ' + request.user.username + u', value: ' +
+          unicode(model) + u') added by: ' + request.user.username + u', value: ' +
           value + u'\n')
         return HttpResponse(u'<!--# ' + unicode(change_set) + u' #-->')
     match = re.match(ur'Phone_new_(\d+)', html_id)
@@ -581,8 +577,8 @@ def save(request):
         register_edit(FOREIGN_KEY_RELATIONSHIP_CHANGED, phone, session,
           username, request.META[u'REMOTE_ADDR'], change_set = change_set,
           field_name = u'entity', foreign_key_added = entity)
-        directory.functions.log_message(u'Phone for Entity ' +
-          str(model) + u') added by: ' + request.user.username + u', value: ' +
+        directory.functions.log_message(u'Phone for Entity ' + unicode(model) +
+          u') added by: ' + unicode(request.user.username) + u', value: ' +
           value + u'\n')
         return HttpResponse(u'<!-- #' + unicode(change_set) + u' #-->')
     elif html_id.startswith(u'Entity_department_'):
@@ -601,7 +597,7 @@ def save(request):
               foreign_key_added = entity.department, foreign_key_deleted =
               original_department)
         directory.functions.log_message(u'Department for Entity ' +
-          str(entity_id) + u') set by: ' + request.user.username +
+          unicode(entity_id) + u') set by: ' + request.user.username +
           u', value: ' + value + u'\n')
         entity.save()
         return HttpResponse(value + u'<!--# ' + unicode(change_set) + u' #-->')
@@ -621,7 +617,7 @@ def save(request):
               foreign_key_added = entity.location, foreign_key_deleted =
               original_location)
         directory.functions.log_message(u'Location for Entity ' +
-          str(entity_id) + u') set by: ' + request.user.username +
+          unicode(entity_id) + u') set by: ' + request.user.username +
           u', value: ' + value + u'\n')
         entity.save()
         return HttpResponse(value + u'<!--# ' + unicode(change_set) + u' #-->')
@@ -642,15 +638,30 @@ def save(request):
               foreign_key_added = entity.reports_to, foreign_key_deleted =
               original_reports_to)
         directory.functions.log_message(u'reports_to for Entity ' +
-          str(entity_id) + u') set by: ' + request.user.username +
+          unicode(entity_id) + u') set by: ' + request.user.username +
           u', value: ' + value + u'\n')
         entity.save()
         return HttpResponse(value + u'<!--# ' + unicode(change_set) + u' #-->')
     else:
-        match = re.match(ur'^(.*?)_(.*)_(\d+)$', html_id)
-        model = match.group(1)
-        field = match.group(2)
-        id = int(match.group(3))
+        try:
+            match = re.match(ur'^(.*?)_(.*)_(\d+)$', html_id)
+            model = match.group(1)
+            field = match.group(2)
+            id = int(match.group(3))
+        except AttributeError:
+            match = re.match(ur'^(.*?)_(\d+)$', html_id)
+            model = match.group(1)
+            if match.group(1) == u'Email':
+                field = u'email'
+            elif match.group(1) == u'Phone':
+                field = u'description'
+            elif match.group(1) == u'Status':
+                field = u'text'
+            elif match.group(1) == u'Tag':
+                field = u'text'
+            elif match.group(1) == u'URL':
+                field = u'url'
+            id = int(match.group(2))
         selected_model = get_model(u'directory', model)
         instance = selected_model.objects.get(id = id)
         original_value = getattr(instance, field)
@@ -661,8 +672,9 @@ def save(request):
             change_set = register_edit(TEXT_CHANGED, instance, session,
               username, request.META[u'REMOTE_ADDR'], field_name = field,
               text_before = original_value, text_after = value)
-        directory.functions.log_message(model + u'.' + field + "(" + str(id) + 
-          u') changed by: ' + request.user.username + u' to: ' + value + u'\n')
+        directory.functions.log_message(unicode(model) + u'.' +
+          unicode(field) + "(" + unicode(id) + u') changed by: ' +
+          unicode(request.user.username) + u' to: ' + unicode(value) + u'\n')
         if change_set != None:
             return HttpResponse(value + u'<!--# ' + unicode(change_set) + u' #-->')
         else:

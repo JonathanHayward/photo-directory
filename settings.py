@@ -5,7 +5,7 @@
 
 import os
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 DIRNAME = os.path.dirname(__file__)
@@ -15,8 +15,8 @@ DELAY_BETWEEN_RETRIES = 1
 INITIAL_RESULTS = 10
 INITIAL_STATI = 5
 SHOULD_ALLOW_USERS_TO_CREATE_ACCOUNTS = 1 # 1 or 0, BUT NOT True or False
-SHOULD_DOWNLOAD_DIRECTORY = 0 # 1 or 0, BUT NOT True or False
-SHOULD_TURN_ON_HIJAXING = 1 # 1 or 0, BUT NOT True or False
+SHOULD_DOWNLOAD_DIRECTORY = 1 # 1 or 0, BUT NOT True or False
+SHOULD_TURN_ON_HIJAXING = 0 # 1 or 0, BUT NOT True or False
 # These are weightings used to determine importance in searches.
 # The values provided are integer clean, but the code should work for the most
 # part with floating point values.

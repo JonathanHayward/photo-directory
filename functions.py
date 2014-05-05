@@ -63,7 +63,12 @@ def format_timestamp(timestamp):
 def log_message(message):
     log_file = os.path.join(os.path.dirname(__file__),
       directory.settings.LOGFILE)
-    open(log_file, u'a').write(time.asctime() + u': ' + message + u'\n')
+    try:
+        open(log_file, u'a').write(unicode(time.asctime()) + u': ' +
+          unicode(message, u'utf-8').encode(u'utf-8') + u'\n')
+    except:
+        open(log_file, u'a').write(time.asctime() + u': ' +
+          u'An error occurred recording this message.' + u'\n')
 
 def register_edit(change_type, instance, session, username, ip, change_set =
   None, content_type = None, field_name = None, foreign_key_added = None,
