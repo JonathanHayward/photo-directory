@@ -1,0 +1,54 @@
+<h2>Search&nbsp;results</h2>
+
+{% if first_portion %}
+    {% for result in first_portion %}
+
+        <div class="search_result"
+          onmouseover="PHOTO_DIRECTORY.mouseover_profile({{ result.id }});"
+          onclick="PHOTO_DIRECTORY.click_profile({{ result.id }});">
+        <p><a href="/?query={{ query }}&id={{ result.id }}"
+        onclick="PHOTO_DIRECTORY.load_profile({{ result.id }}); return false;"
+        >{{ result.name }}</a><br />
+        {% if result.image %}
+            <img class="search_results" src="/profile/images/{{ result.id }}" />
+        {% endif %}
+        {% if result.title %}
+            {{ result.title }}{% if result.department %},<br />{% endif %}
+        {% endif %}
+        {{ result.department }}
+        </p>
+        </div>
+
+    {% endfor %}
+{% else %}
+    <p><em>There were no matches to your search.</em></p>
+{% endif %}
+{% if second_portion %}
+    <a class="show_additional_results"
+    href="JavaScript:PHOTO_DIRECTORY.show_additional('results')"
+    ><span class="emphasized">+</span> Show all</a>
+    <div id="additional_results">
+    {% for result in second_portion %}
+
+{% comment %}
+        <div class="search_result"
+          onmouseover="PHOTO_DIRECTORY.mouseover_profile({{ result.id }});"
+          onclick="PHOTO_DIRECTORY.click_profile({{ result.id }});">
+{% endcomment %}
+        <div class="search_result">
+        <p><a href="/?query={{ query }}&id={{ result.id }}"
+        onclick="PHOTO_DIRECTORY.click_profile({{ result.id }}); return false;"
+        >{{ result.name }}</a><br />
+        {% if result.image %}
+            <img class="search_results" src="/profile/images/{{ result.id }}" />
+        {% endif %}
+        {% if result.title %}
+            {{ result.title }}{% if result.department %},<br />{% endif %}
+        {% endif %}
+        {{ result.department }}
+        </p>
+        </div>
+
+    {% endfor %}
+    </div>
+{% endif %}

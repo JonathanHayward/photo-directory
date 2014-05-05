@@ -1,0 +1,368 @@
+{% extends "base.html" %}
+{% block head_title %}{{ entity.honorifics }} {{ entity.name }} {{ entity.post_nominals}}{% endblock head_title %}
+{% block body_preamble_section %}
+<div class="standard_links">
+<span id="bad_network_connection"><a href="/" onclick="bad_network_connection(); return false;">Bad network
+connection</a> &bull;</span>
+<a href="/profile/new" onclick="add_new(); return false;">Add new</a> &nbsp;
+</div>
+{% endblock body_preamble_section %}
+{% block body_main %}
+<h1>
+    <span id="Entity_honorifics_{{ entity.id }}" class="edit">
+        {% if entity.honorifics %}
+            {{ entity.honorifics }}
+        {% else %}
+            Click to edit.
+        {% endif %}
+    </span>
+    <span id="Entity_name_{{ entity.id }}" class="edit">
+        {% if entity.name %}
+            {{ entity.name }}
+        {% else %}
+            Click to edit.
+        {% endif %}
+    </span>
+    <span id="Entity_post_nominals_{{ entity.id }}" class="edit">
+        {% if entity.post_nominals %}
+            {{ entity.post_nominals }}
+        {% else %}
+            Click to edit.
+        {% endif %}
+    </span>
+</h1>
+
+{% if entity.image %}
+<img src="/images/{{ entity.id }}" />
+{% endif %}
+<p id="entity_description_{{ entity.id }}" class="edit_textarea">
+    {% if entity.description %}
+        {{ entity.description }}
+    {% else %}
+        Click to edit.
+    {% endif %}
+</p>
+
+<p>Department:
+    <strong>
+        <select name="department" id="department" class="autocomplete"
+          onchange="update_autocomplete('Entity_department_{{ entity.id}}', document.getElementById('department').value);">
+            <option
+                {% if not entity.department.id %}
+                    selected="selected"
+                {% endif %}
+                value="department.-1">None</option>
+            {% for department in departments %}
+                <option 
+                    {% if department.id == entity.department.id %}
+                        selected="selected"
+                    {% endif %}
+                    value="department.{{ department.id }}">{{ department.name }}</option>
+            {% endfor %}
+        </select>
+    </strong>
+</p>
+<p>
+Homepage:
+{% if entity.homepage %}
+    <a href="{{ entity.homepage }}">
+{% endif %}
+<strong class="edit_rightclick" id="entity_homepage_{{ entity.id }}">
+    {% if entity.homepage %}
+        {{ entity.homepage }}
+    {% else %}
+        Right click to change.
+    {% endif %}
+</strong>
+{% if entity.homepage %}
+    </a>
+{% endif %}
+</p>
+<p>
+Email: 
+<strong>
+    {% for email in emails %}
+        <a id="Email_email_{{ email.id }}" class="edit_rightclick" href="mailto:{{ email.email }}">
+            {{ email.email }}
+        </a>
+        {% if not forloop.last %}
+            ,
+        {% endif %}
+    {% endfor %}
+    <span class="edit" id="Email_new_{{ entity.id }}">
+        Click to add email.
+    </span>
+</strong>
+</p>
+<p>
+    Location:
+    <strong>
+        <select name="location" id="location" class="autocomplete"
+          onchange="update_autocomplete('Entity_location_{{ entity.id}}', document.getElementById('location').value);">
+        <option
+        {% if not entity.location.id %}
+            selected="selected"
+        {% endif %}
+        value="location.-1">None</option>
+        {% for location in locations %}
+            <option 
+            {% if location.id == entity.location.id %}
+                selected="selected"
+            {% endif %}
+            value="location.{{ location.id }}">{{ location.identifier }}</option>
+        {% endfor %}
+        </select>
+    </strong>
+</p>
+<p>
+    Phone:
+    <strong class="edit" id="entity_phone_{{ entity.id }}">
+        {% if entity.phone %}
+            {{ entity.phone }}
+        {% else %}
+            Click to change.
+        {% endif %}
+    </strong>
+</p>
+<p>
+    Reports to:
+    <strong>
+        <select name="reports_to" id="reports_to" class="autocomplete"
+          onchange="update_autocomplete('Entity_reports_to_{{ entity.id}}', document.getElementById('reports_to').value);">
+        <option
+        {% if not entity.reports_to.id %}
+            selected="selected"
+        {% endif %}
+        value="reports_to_-1">None</option>
+        {% for reports_to in reports_to_candidates %}
+            <option 
+            {% if reports_to.id == entity.reports_to.id %}
+                selected="selected"
+            {% endif %}
+            value="reports_to_{{ reports_to.id }}">{{ reports_to.name }}</option>
+        {% endfor %}
+        </select>
+    </strong>
+</p>
+<p>
+Start date:
+<strong>
+    {{ entity.start_date }}
+</strong>
+</p>
+
+{% endblock body_main %}
+{% block footer_javascript_page %}
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function ajaxFileUpload(id)
+    {
+    //starting setting some animation when the ajax starts and completes
+    $("#loading")
+    .ajaxStart(function()
+        {
+        $(this).show();
+        })
+    .ajaxComplete(function()
+        {
+        $(this).hide();
+        });
+ 
+    /*
+        prepareing ajax file upload
+        url: the url of script file handling the uploaded files
+                    fileElementId: the file type of input element id and it will be the index of  $_FILES Array()
+        dataType: it support json, xml
+        secureuri:use secure protocol
+        success: call back function when the ajax complete
+        error: callback function when the ajax failed
+ 
+                */
+        $.ajaxFileUpload(
+            {
+            url: '/ajax/saveimage/' + id,
+            secureuri: false,
+            fileElementId: 'image',
+            dataType: 'json',
+            error: function(XMLHttpRequest, textStatus, errorThrown)
+                {
+                $("#image_slot").html(XMLHttpRequest.responseText);
+                },
+            success: function (data, status)
+                {
+                if(typeof(data.error) != 'undefined')
+                    {
+                    if(data.error != '')
+                        {
+                        send_notification(data.error);
+                        }
+                    else
+                        {
+                        $("#image_slot").html(data.msg);
+                        }
+                    }
+                },
+            });
+    reload_profile();
+    return false;
+    }
+
+function limit_width(identifier, maximum)
+    {
+    $(identifier).each(function(index, image)
+        {
+        if ($(image).width() == 0)
+            {
+            setTimeout("limit_width('" + identifier + "', " + maximum + ");",
+              DELAY_BETWEEN_RETRIES);
+            }
+        if ($(image).width() > maximum)
+            {
+            var ratio = $(image).width() / maximum;
+            var height = Math.ceil($(image).height() / ratio);
+            $(image).css({height: height, width: maximum});
+            }
+        });
+    }
+function register_editables()
+    {
+    $(".edit").editable("/ajax/save",
+        {
+        cancel: "Cancel",
+        submit: "OK",
+        tooltip: "Click to edit.",
+        });
+    $(".edit").editable("/ajax/save",
+        {
+        cancel: "Cancel",
+        submit: "OK",
+        tooltip: "Click to edit.",
+        });
+    $(".edit_rightclick").editable("/ajax/save",
+        {
+        cancel: "Cancel",
+        submit: "OK",
+        tooltip: "Right click to edit.",
+        event: "contextmenu",
+        });
+    $(".edit_textarea").editable("/ajax/save",
+        {
+        cancel: "Cancel",
+        submit: "OK",
+        tooltip: "Click to edit.",
+        type: "textarea",
+        });
+    $(".edit_textarea").editable("/ajax/save",
+        {
+        cancel: "Cancel",
+        submit: "OK",
+        tooltip: "Click to edit.",
+        type: "textarea",
+        event: "contextmenu",
+        });
+    }
+
+function update_autocomplete(id, value)
+    {
+    $.ajax({
+        data:
+            {
+            id: id,
+            value: value,
+            },
+        url: "/ajax/save", 
+        });
+    }
+
+function update_autocomplete_handler(event, ui)
+    {
+    var split_value = ui.item.value.split(".");
+    var field = split_value[0];
+    var id = split_value[1];
+    $.ajax({
+        data:
+            {
+            id: "Entity_" + field + "_" + {{ entity.id }},
+            value: id,
+            },
+        url: "/ajax/save", 
+        });
+    }
+
+$(function()
+    {
+    register_editables();
+    });
+
+(function($) {
+    $.widget("ui.combobox", {
+        _create: function() {
+            var self = this;
+            var select = this.element.hide();
+            var input = $("<input>")
+                .insertAfter(select)
+                .autocomplete({
+                    source: function(request, response) {
+                        var matcher = new RegExp(request.term, "i");
+                        response(select.children("option").map(function() {
+                            var text = $(this).text();
+                            if (this.value && (!request.term || matcher.test(text)))
+                                return {
+                                    id: this.value,
+                                    label: text.replace(new RegExp("(?![^&;]+;)(?!<[^<>]*)(" + $.ui.autocomplete.escapeRegex(request.term) + ")(?![^<>]*>)(?![^&;]+;)", "gi"), "<strong>$1</strong>"),
+                                    value: text
+                                };
+                        }));
+                    },
+                    delay: 0,
+                    change: function(event, ui) {
+                        if (!ui.item) {
+                            // remove invalid value, as it didn't match anything
+                            $(this).val("");
+                            return false;
+                        }
+                        select.val(ui.item.id);
+                        self._trigger("selected", event, {
+                            item: select.find("[value='" + ui.item.id + "']")
+                        });
+                        
+                    },
+                    minLength: 0
+                })
+                .addClass("ui-widget ui-widget-content ui-corner-left");
+            $("<button>&nbsp;</button>")
+            .attr("tabIndex", -1)
+            .attr("title", "Show All Items")
+            .insertAfter(input)
+            .button({
+                icons: {
+                    primary: "ui-icon-triangle-1-s"
+                },
+                text: false
+            }).removeClass("ui-corner-all")
+            .addClass("ui-corner-right ui-button-icon")
+            .click(function() {
+                // close if already visible
+                if (input.autocomplete("widget").is(":visible")) {
+                    input.autocomplete("close");
+                    return;
+                }
+                // pass empty string as value to search for, displaying all results
+                input.autocomplete("search", "");
+                input.focus();
+            });
+        }
+    });
+
+})(jQuery);
+
+$(function()
+    {
+    $(".autocomplete").combobox();
+    $(".autocomplete").toggle();
+    });
+
+// -->
+</script>
+{% endblock footer_javascript_page %}

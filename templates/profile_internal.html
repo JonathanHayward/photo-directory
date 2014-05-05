@@ -1,0 +1,200 @@
+<h2>People, etc.</h2>
+
+<div class="deletion">
+<span class="delete" id="Entity_{{ id }}">Delete "{{ entity.name }}"</span>
+</div>
+<h3 id="Entity_name_{{ id }}" title="Click to edit." class="edit"
+>{{ entity.name }}</h3>
+<div class="image">
+    <form id="image_upload" name="image_upload"
+      action="/ajax/saveimage/{{ id }}" method="POST"
+      enctype="multipart/form-data">
+        {% if entity.image_mimetype %}
+            <img class="profile" src="/profile/images/{{ id }}" /><br />
+        {% else %}
+            <div id="image_slot"></div>
+            Upload image:<br />
+        {% endif %}
+        <input type="file" name="image" id="image" /><br />
+        <button class="button" id="upload"
+          onclick="return PHOTO_DIRECTORY.ajax_file_upload({{ id }});"
+          >Upload</button>
+    </form>
+</div>
+<p>Title: <strong id="Entity_title_{{ id }}" title="Click to edit."
+  class="edit">{{ entity.title }}</strong></p>
+
+<p>Description: <strong id="Entity_description_{{ id }}" title="Click to edit."
+  class="edit_textarea">{{ entity.description }}</strong></p>
+
+<p>Tags: <strong>
+    {% for tag in tags %}
+        <span class="tag">{{ tag.text }}</span>
+        <span class="delete" id="Tag_{{ tag.id }}">&#10008;</span>
+        &nbsp;
+    {% endfor %}
+    <span class="edit_textarea" id="Entity_tag_new_{{ id }}"></span>
+</strong></p>
+
+<p>Phone: <strong>
+    {% for phone in phones %}
+        <span id="Phone_{{ phone.id }}" class="edit"
+          title="Click to edit.">{{ phone.number }}</span>
+        <span class="delete" id="Phone_{{ phone.id }}">&#10008;</span> &nbsp;
+    {% endfor %}
+    <span class="edit" title="Click to add." id="Phone_new_{{ id }}"></span>
+</strong></p>
+<p>Email: <strong>
+    {% for email in emails %}
+    <a id="Email_{{ email.id }}" class="edit_rightclick"
+      title="RIGHT click to edit." href="mailto:{{ email.email }}"
+      >{{ email.email }}</a>
+    <span class="delete" id="Email_{{ email.id }}">&#10008;</span> &nbsp;
+    {% endfor %}
+    <span class="edit" title="Click to edit." id="Email_new_{{ id }}"></span>
+</strong></p>
+<p>Webpages: <strong>
+    {% for url in urls %}
+        <a id="URL_url_{{ url.id }}" class="edit_rightclick"
+          title="RIGHT click to edit."
+          href="{% if ":" not in url.url %}http://{% endif %}{{ url.url }}">{{ url.url }}</a>
+        <span class="delete" id="URL_{{ url.id }}">&#10008;</span> &nbsp;
+    {% endfor %}
+    <span class="edit" title="Click to add." id="URL_new_{{ id }}"></span>
+</strong></p>
+
+<p>GPS: <strong>
+    {% if gps %}
+        <a class="edit_rightclick" id="Entity_gps_{{ id }}"
+          href="{{ gps_url }}">{{ gps }}</a>
+    {% else %}
+        <span class="edit" id="Entity_gps_{{ id }}"></span>
+    {% endif %}
+</strong></p>
+
+<p>Postal address:
+    <strong class="edit_textarea" title="Click to edit."
+      id="Entity_postal_address_{{ id }}">{{ entity.postal_address }}</strong></p>
+
+<p>Other contact information:
+    <strong class="edit_textarea" title="Click to edit."
+      id="Entity_other_contact_{{ id }}">{{ entity.other_contact }}</strong></p>
+
+<p>Time zone:
+    <select name="time_zone" id="time_zone"
+      onchange="PHOTO_DIRECTORY.update_autocomplete('Entity_time_zone_{{ id }}', 'time_zone');">
+        {% for time_zone in time_zones %}
+            <option value="{{ time_zone.0 }}"
+                {% if time_zone.0 == entity.time_zone %}
+                    selected
+                {% endif %}
+            >{{ time_zone.1 }}</option>
+        {% endfor %}
+    </select><br />
+Observes daylight saving time: <input type="checkbox"
+name="observes_daylight_saving_time" id="observes_daylight_saving_time"
+onchange="PHOTO_DIRECTORY.update_autocomplete('Entity_observes_daylight_saving_time_{{ id }}', 'observes_daylight_saving_time');"
+{% if entity.observes_daylight_saving_time %}
+  checked="checked"
+{% endif %}
+    /></p>
+
+{% if entity.time_zone != None %}
+<p>Local time:
+<span id="local_time_zone">{{ entity.time_zone }}</span>
+<span id="local_time"></span></p>
+{% endif %}
+
+<p>Department: <strong>
+    <a href="/?query={{ query }}&id={{ entity.department.id }}"
+      onclick="load_profile({{ entity.department.id }}); return false;"
+      >{{ entity.department.name }}</a> &nbsp;
+    <select name="department" id="department" class="autocomplete"
+      onchange=
+      "PHOTO_DIRECTORY.update_autocomplete('Entity_department_{{ id }}', 'department');">
+        <option 
+          {% if not entity.department %}
+             selected="selected"
+          {% endif %}
+          value="department.-1"></option>
+        {% for department in entities %}
+        <option
+          {% if department.id == entity.department %}
+              selected="selected"
+          {% endif %}
+          value="department.{{ department.id }}">{{ department.name }}</option>
+        {% endfor %}
+</select></strong></p>
+
+<p>Location: <strong>
+    <a href="/?query={{ query }}&id={{ entity.location.id }}"
+      onclick="load_profile({{ entity.location.id }}); return false;"
+      >{{ entity.location.name }}</a> &nbsp;
+    <select name="location" id="location" class="autocomplete"
+      onchange=
+      "PHOTO_DIRECTORY.update_autocomplete('Entity_location_{{ id }}', 'location');">
+        <option 
+          {% if not entity.location %}
+             selected="selected"
+          {% endif %}
+          value="location.-1"></option>
+        {% for location in entities %}
+        <option
+          {% if location.id == entity.location %}
+              selected="selected"
+          {% endif %}
+          value="location.{{ location.id }}">{{ location.name }}</option>
+        {% endfor %}
+</select></strong></p>
+
+<p>Reports to: <strong>
+    <a href="/?query={{ query }}&id={{ entity.reports_to.id }}"
+      onclick="load_profile({{ entity.reports_to.id }}); return false;"
+      >{{ entity.reports_to.name }}</a> &nbsp;
+    <select name="reports_to" id="reports_to" class="autocomplete"
+      onchange=
+      "PHOTO_DIRECTORY.update_autocomplete('Entity_reports_to_{{ id }}', 'reports_to');">
+        <option 
+          {% if not entity.reports_to %}
+             selected="selected"
+          {% endif %}
+          value="reports_to.-1"></option>
+        {% for reports_to in entities %}
+        <option
+          {% if reports_to.id == entity.reports_to %}
+              selected="selected"
+          {% endif %}
+          value="reports_to.{{ reports_to.id }}">{{ reports_to.name }}</option>
+        {% endfor %}
+</select></strong></p>
+
+<p>Status:</p>
+<div class="edit_textarea" id="Status_new_{{ id }}"></div>
+{% for status in first_stati %}
+<p>{{ status.text }}<br />
+{{ status.username }}, 
+<span class="timestamp">{{ status.format_timestamp }}</span></p>
+{% endfor %}
+{% if second_stati %}
+    <p><a class="show_additional_stati"
+    href="JavaScript:show_additional('stati');"
+    ><span class="emphasized">+</span> Show all</a></p>
+    <div class="additional_stati">
+        {% for status in second_stati %}
+            <p>{{ status.text }}<br />
+            <span class="timestamp">{{ status.format_timestamp }}</span></p>
+        {% endfor %}
+    </div>
+{% endif %}
+<noscript>
+    <style type="text/css">
+        <!--
+
+            .edit:after, .edit_textarea:after, .edit_rightclick:after
+                {
+                content: "";
+                }
+
+        // -->
+    </style>
+</noscript>

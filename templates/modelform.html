@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block head_title %}Manage {{ title }}{% endblock head_title %}
+{% block body_header_title %}<h1>{{ title }}</h1>{% endblock body_header_title %}
+{% block body_main %}
+<form action="" method="POST">
+    <table>
+        {{ form }}
+        <tr>
+            <th>&nbsp;</th>
+            <td><input type="submit" /></td>
+        </tr>
+    </table>
+</form>
+{% endblock body_main %}
+{% block head_css_page %}
+<style type="text/css">
+<!--
+
+body
+    {
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+
+.even
+    {
+    }
+
+.odd input
+    {
+    }
+
+.odd textarea
+    {
+    }
+
+input.text
+    {
+    border: 1px solid silver;
+    font-size: larger;
+    font-weight: bold;
+    height: 1.5em;
+    width: 100%;
+    }
+
+.odd
+    {
+    background-color: #eeeeee;
+    }
+
+.odd input
+    {
+    background-color: #f4f4f4;
+    }
+
+.odd textarea
+    {
+    background-color: #f4f4f4;
+    }
+
+table
+    {
+    border-spacing: 0;
+    width: 100%;
+    }
+
+td
+    {
+    padding: 4px;
+    width: 100%;
+    }
+
+th
+    {
+    padding: 4px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    }
+
+textarea
+    {
+    border: 1px solid silver;
+    font-family: Verdana, Arial, sans;
+    font-size: larger;
+    font-weight: bold;
+    height: 1.5em;
+    width: 100%;
+    }
+
+textarea#id_description
+    {
+    height: 10em;
+    }
+
+// -->
+</style>
+{% endblock head_css_page %}
+{% block footer_javascript_page %}
+<script language="JavaScript" type="text/javascript">
+<!--
+
+    $("input:text").addClass("text");
+    $("tr:even").addClass("odd");
+    $("tr:odd").addClass("even");
+
+// -->
+</script>
+{% endblock footer_javascript_page %}
