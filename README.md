@@ -1,0 +1,54 @@
+photo-directory
+===============
+
+## Hayward's Free Intranet Employee Photo Directory
+
+Hayward's Free Intranet Employee Photo Directory is (c)2010 by Jonathan Hayward
+and in all original material is made available to you under the terms of your
+choice of the MIT and GPLv2/v3 licenses:
+
+    MIT: http://www.opensource.org/licenses/mit-license.php
+    GPLv2: http://www.opensource.org/licenses/gpl-license.html
+    GPLv3: http://www.opensource.org/licenses/gpl-3.0.html
+
+Hayward's Free Intranet Employee Photo Directory is published with no warranty,
+either express or implied, as specfiied in its licenses.
+
+Hayward's Free Intranet Employee Photo Directory draws from jQuery core, jQuery
+UI, a theme from the jQuery UI Theroller, Jeditable, and Ajax File Upload, all
+of which are available to under their respective licenses. Their respective
+homepages are at:
+
+    http://jquery.com/
+    http://jqueryui.com/
+    http://jqueryui.com/themeroller/
+    http://www.appelsiini.net/projects/jeditable
+    http://www.phpletter.com/Our-Projects/AjaxFileUpload/
+
+Hayward's Free Intranet Employee Photo Directory is a Django application. It is
+deployed as other Django applications are; for instructions to deploy a Django
+application, see one or more of:
+
+    http://djangobook.com/en/2.0/chapter12/
+    http://docs.djangoproject.com/en/dev/howto/deployment/
+
+If you would like to play around with it instead of deploying it immediately,
+edit the settings.py file so that line 8 says:
+
+    DEBUG = True
+
+Then run:
+
+    python manage.py syncdb
+    python manage.py runserver
+
+And point your browser to:
+
+    http://localhost:8000/
+
+Thanks, and enjoy! (This is purely optional, but if you like this tool, please
+consider a link to my homepage at http://JonathansCorner.com/!)
+
+    Jonathan Hayward
+    jonathan.hayward@pobox.com
+    http://JonathansCorner.com
